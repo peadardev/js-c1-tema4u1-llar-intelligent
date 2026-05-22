@@ -11,10 +11,12 @@ const playNextSong = () => {
 
 <template>
   <div class="panel-item">
-    <div class="icon-unicode">🎵</div>
-    <div class="title-item">Música</div>
     <div>
-      <div class="content-item">{{ isPlaying ? 'Reproduint' : 'Pausat' }}</div>
+      <div class="icon-unicode">🎵</div>
+      <div class="title-item">Música</div>
+    </div>
+    <div class="content-item">{{ isPlaying ? 'Reproduint' : 'Pausat' }}</div>
+    <div>
       <span>
         <button @click="togglePlay">{{ isPlaying ? 'Pausar' : 'Reproduir' }}</button>
         <button @click="playNextSong">Següent</button>
@@ -23,4 +25,8 @@ const playNextSong = () => {
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.panel-item {
+  background: lightgoldenrodyellow;
+}
+</style>

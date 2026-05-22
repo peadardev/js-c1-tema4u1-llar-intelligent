@@ -13,4 +13,8 @@ const date = ref<string>(new Date().toLocaleDateString());
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.panel-item {
+  background: lightgreen;
+}
+</style>

@@ -12,19 +12,31 @@ import VehicleSection from './components/VehicleSection.vue';
 </template>
 
 <style>
+button {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 12px;
+  cursor: pointer;
+  background: lightblue;
+  padding: 1px;
+  border: 0.5px solid darkgray;
+  border-radius: 5px;
+}
 .title-panel {
   padding: 0.5rem;
 }
 .panel-general {
   width: 44rem;
   font-family: Arial, sans-serif;
-  border: 2px solid black;
+  background: lightgrey;
+  border: 1px solid black;
   padding: 0.2rem;
   border-radius: 10px;
 }
 .panel-section {
   width: 40rem;
-  border: 2px solid black;
+  background: white;
+  border: 1px solid darkgray;
   border-radius: 10px;
   padding: 0.5rem;
   margin: 1rem;
@@ -33,13 +45,18 @@ import VehicleSection from './components/VehicleSection.vue';
   display: flex;
 }
 .panel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 10rem;
   min-width: 10rem;
   height: 10rem;
   font-size: 16px;
-  border: 1px solid blue;
+  background: lightyellow;
+  border: 0px solid darkgrey;
   border-radius: 10px;
   padding: 1rem;
+  margin: 0.5rem;
 }
 .title-section {
   font-size: 14;

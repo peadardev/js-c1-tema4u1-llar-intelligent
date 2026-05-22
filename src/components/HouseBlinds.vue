@@ -8,13 +8,17 @@ const toggleStatus = () => {
 
 <template>
   <div class="panel-item">
-    <div class="icon-unicode">{{ isOpen ? '🔲' : '🔳' }}</div>
-    <div class="title-item">Persianes</div>
     <div>
-      <div class="content-item">{{ isOpen ? 'Obertes' : 'Tancades' }}</div>
-      <button @click="toggleStatus">{{ isOpen ? 'Tancar' : 'Obrir' }}</button>
+      <div class="icon-unicode">{{ isOpen ? '🔲' : '🔳' }}</div>
+      <div class="title-item">Persianes</div>
     </div>
+    <div class="content-item">{{ isOpen ? 'Obertes' : 'Tancades' }}</div>
+    <button @click="toggleStatus">{{ isOpen ? 'Tancar' : 'Obrir' }}</button>
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.panel-item {
+  background: lightcyan;
+}
+</style>

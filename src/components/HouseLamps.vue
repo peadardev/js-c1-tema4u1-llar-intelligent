@@ -5,12 +5,12 @@ const percentatge = ref(50);
 
 <template>
   <div class="panel-item">
-    <div class="icon-unicode">💡</div>
-    <div class="title-item">Llums</div>
     <div>
-      <div class="content-item">{{ percentatge }}%</div>
-      <input type="range" min="0" max="100" v-model="percentatge" />
+      <div class="icon-unicode">💡</div>
+      <div class="title-item">Llums</div>
     </div>
+    <div class="content-item">{{ percentatge }}%</div>
+    <input type="range" min="0" max="100" v-model="percentatge" />
   </div>
 </template>
 
